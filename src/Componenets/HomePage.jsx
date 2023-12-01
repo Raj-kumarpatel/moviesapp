@@ -13,10 +13,14 @@ const MovieSearch = () => {
 
   useEffect(() => {
     const handleSearch = async () => {
+      const url=`http://www.omdbapi.com/?&apikey=ee4c3e02`
+      const params = {
+        s: searchTerm,
+        type:movieType,
+      
+    };
       try {
-        const response = await axios.get(
-          `http://www.omdbapi.com/?s=${searchTerm}&type=${movieType}&apikey=ee4c3e02`
-        );
+        const response = await axios.get(url,{params})     
         console.log(response.data.Search)
         let sortedResults = response.data.Search || [];
         // Sort based on the selected option
