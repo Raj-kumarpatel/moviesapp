@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 const MovieDetails = () => {
   const { id } = useParams();
   const [state, setState] = useState('')
-  let url = `http://www.omdbapi.com/?&apikey=ee4c3e02&i=${id}`
+  let url = `https://www.omdbapi.com/?&apikey=ee4c3e02&i=${id}`
   async function fetchData() {
     let res = await fetch(url);
     let data = await res.json()
