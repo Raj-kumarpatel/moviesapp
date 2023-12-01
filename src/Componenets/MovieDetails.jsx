@@ -13,7 +13,13 @@ const MovieDetails = () => {
   }
   useEffect(() => {
     fetchData();
-  })
+  },[])
+  function handlefavourite(){
+    const favItem=JSON.parse(localStorage.getItem("favourite"))||[];
+    const favData=[...favItem,state]
+    localStorage.setItem("favourite",JSON.stringify(favData))
+    console.log("working")
+  }
   return (
 
 
@@ -25,7 +31,7 @@ const MovieDetails = () => {
         <p>IMDB ID: {state.imdbID}</p>
         <p>Type: {state.Genre}</p>
         <p>Type: {state.Released}</p></div>
-
+    <button onClick={handlefavourite}>Add to favourite</button>
     </div>
 
 
