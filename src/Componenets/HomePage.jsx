@@ -13,7 +13,7 @@ const MovieSearch = () => {
 
   useEffect(() => {
     const handleSearch = async () => {
-      const url=`http://www.omdbapi.com/?&apikey=ee4c3e02`
+      const url=`https://www.omdbapi.com/?&apikey=ee4c3e02`
       const params = {
         s: searchTerm,
         type:movieType,
