@@ -54,4 +54,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - **Filter and Sort:** Filter search results by movie type and sort them by year or IMDB ID.
 - **Responsive Design:** The app is designed to work seamlessly on various devices, including laptops, tablets, and mobile phones.
 - **Movie Details:** Clicking on a movie poster reveals detailed information about the selected movie.
+- **Navigation:** Navigate between Home, Login, Si
+- **Search Movies:** Users can search for movies by title using the OMDB API.
+- **Filter and Sort:** Filter search results by movie type and sort them by year or IMDB ID.
+- **Responsive Design:** The app is designed to work seamlessly on various devices, including laptops, tablets, and mobile phones.
+- **Movie Details:** Clicking on a movie poster reveals detailed information about the selected movie.
 - **Navigation:** Navigate between Home, Login, Signup, Favorites, and Movie Details using the React Router.
